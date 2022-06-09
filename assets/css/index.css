@@ -425,8 +425,39 @@ nav.main-navigation ul li{
   transform: translate(42px, 18px);
 }
 
-.grid-child:hover {
-  background-color: #7387C3;
+.grid-child:hover h1{
+  position: relative;
+  top:90px;
+}
+.sap:hover{
+    background-image:url(../images/SAP\ ERP.jpeg);
+    background-position: center;
+    background-size: 280px 220px;
+  }
+.erp:hover{
+  background-image:url(../images/SAP\ ERP.jpeg);
+  background-position: center;
+  background-size: 280px 220px;
+}
+.cloud:hover{
+  background-image:url(../images/blue\ cloud.jpeg);
+  background-position: center;
+  background-size: 280px 220px;
+}
+.blockchain:hover{
+  background-image:url(../images/Block\ Chain.jpeg);
+  background-position: center;
+  background-size: 280px 220px;
+}
+.ai:hover{
+  background-image:url(../images/ai.jpg);
+  background-position: top;
+  background-size: 280px auto;
+}
+.data-analytics:hover{
+  background-image:url(../images/data\ analytics.jpeg);
+  background-position: center;
+  background-size: 280px 220px;
 }
 
 .grid-child h1 {
