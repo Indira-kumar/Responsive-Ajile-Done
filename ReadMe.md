@@ -8,6 +8,6 @@ A responsive UI for the Ajile Done Company.
 - [Aluru S Vardhini](https://github.com/vardhinialuru05)
 - [Aaqil Rajkrishna](https://github.com/aaqilrk)
 
-[Click Here]() Link to the Website
+[Click Here](https://indira-kumar.github.io/Responsive-Ajile-Done/) Link to the Website
 ### Note:
 All the Images, logos are copy righted to the Ajile Done company
