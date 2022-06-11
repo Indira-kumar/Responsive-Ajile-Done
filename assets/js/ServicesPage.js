@@ -1,28 +1,28 @@
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const openModalcssButtons = document.querySelectorAll('[data-modalcss-target]')
 const overlay = document.getElementById('overlay')
 
-openModalButtons.forEach(button => {
+openModalcssButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
+    const modalcss = document.querySelector(button.dataset.modalcssTarget)
+    openModalcss(modalcss)
   })
 })
 
 overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active')
-  modals.forEach(modal => {
-    closeModal(modal)
+  const modalcsss = document.querySelectorAll('.modalcss.active')
+  modalcsss.forEach(modalcss => {
+    closeModalcss(modalcss)
   })
 })
 
-function openModal(modal) {
-  if (modal == null) return
-  modal.classList.add('active')
+function openModalcss(modalcss) {
+  if (modalcss == null) return
+  modalcss.classList.add('active')
   overlay.classList.add('active')
 }
 
-function closeModal(modal) {
-  if (modal == null) return
-  modal.classList.remove('active')
+function closeModalcss(modalcss) {
+  if (modalcss == null) return
+  modalcss.classList.remove('active')
   overlay.classList.remove('active')
 }

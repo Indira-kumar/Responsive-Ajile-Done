@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assets/images/logo.svg?v=2" type="image/x-icon">  
   <!-- Custom Style   -->
-	<link rel="stylesheet" href="assets/css/ServicesPage.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,19 +15,19 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+	<link rel="stylesheet" href="assets/css/ServicesPage.css">
   <title>Careers</title>
 </head>
 <body>
 
-  <div class="modal" id="modal">
-    <div class="modal-left">
+  <div class="modalcss" id="modalcss">
+    <div class="modalcss-left">
       <img src="./assets/images/Rectangle 16.png" alt="">
     </div>
-    <div class="modal-right">
+    <div class="modalcss-right">
       <h1>OPEN POSITIONS</h1>
       <p>Apply in Ajiledone with simple steps, and we'll contact you within a few hours.</p>
-      <form  action="mailto:ritikranjan@ajiledone.com" method="post" enctype="text/plain">
+      <form  action="mailto:ritikranjan@ajiledone.com" method="post" enctype="text/plain" class="forms-popup">
         <input placeholder="Name of the person">
         <input placeholder="Profile Selected">
         <input placeholder="Add Resume(Limit: 5MB )">
@@ -60,7 +59,7 @@
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
       <a href="index.html"><img id="logo" src="assets/images/Horizontal 1.png" alt=""></a>
-        <a class="navbar-brand" href="#" style="margin: 0px 10px;">Ajiledone</a>
+        <a class="navbar-brand" href="#" style="margin: 0px 20px;">AjileDone</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -86,6 +85,11 @@
           </div>
         </div>
       </div>
+      <form class="container-fluid justify-content-start">
+        <button class="btn me-2 navbar-toggle-off" type="button" style="position: relative; left:450px; background-color:#45537c; color: white;">
+          <a href="https://api.whatsapp.com/send?phone=919113458213" style="color: white;">Get In Touch</a>
+        </button>
+      </form>
     </nav>
   	</header>
 
@@ -94,7 +98,7 @@
   <!-- main -->
 
   <div id="image-container">
-    <img src="./assets/images/Rectangle 55.png">
+    <img src="./assets/images/Rectangle 55.png" style="width: 100%; height: auto;">
   </div>
 
   <div class="content-container">
@@ -111,13 +115,12 @@
       </div>
 
       <p>Positions for:</p>
-
+      <div class="option-box">Blockchain</div>
+      <div class="option-box">Mern</div>
+      <div class="option-box">Full-Stack</div>
       <div class="option-box">Backend</div>
-      <div class="option-box">Backend</div>
-      <div class="option-box">Second Option</div>
-      <div class="option-box">Backend</div>
-      <div class="option-box">Third-option</div>
-      <div class="option-box">Backend</div>
+      <div class="option-box">ML/AI</div>
+      <div class="option-box">Data Analyst</div>
 
     </div>
     
@@ -128,13 +131,13 @@
       </div>
 
       <p>Positions for:</p>
-
-      <div class="option-box">Backend</div>
-      <div class="option-box">Backend</div>
-      <div class="option-box">Second Option</div>
-      <div class="option-box">Backend</div>
-      <div class="option-box">Third-option</div>
-      <div class="option-box">Backend</div>
+           
+      <div class="option-box">UI-Designer</div>
+      <div class="option-box">User researcher</div>
+      <div class="option-box">Experience Strategy</div>
+      <div class="option-box">Interaction designer</div>
+      <div class="option-box">UI-Prototyping</div>
+      <div class="option-box">Graphic designer</div>
 
     </div>
 
@@ -145,13 +148,12 @@
       </div>
 
       <p>Positions for:</p>
-
-      <div class="option-box">Backend</div>
-      <div class="option-box">Backend</div>
-      <div class="option-box">Second Option</div>
-      <div class="option-box">Backend</div>
-      <div class="option-box">Third-option</div>
-      <div class="option-box">Backend</div>
+      <div class="option-box">SEO</div>
+      <div class="option-box">SMO</div>
+      <div class="option-box">Marketing</div>
+      <div class="option-box">BI</div>
+      <div class="option-box">Content Writer</div>
+      <div class="option-box">Marketing Manager</div>
 
     </div>
   </div>
@@ -165,20 +167,20 @@
   <div class="job-container">
 
     <div class="left">
-      <p class="department">Department</p>
-      <h4>POSITION REQUIRED-</h4>
-      <p class="position-count">No. of positions: 5</p>
+      <p class="department">Designing Team</p>
+      <h4>UI-Designer</h4>
+      <p class="position-count">No. of positions: 2</p>
       <div class="position-type">
         <i class="fa-solid fa-location-dot"></i>
         <p>Remote</p>
         <i class="fa-solid fa-clock"></i>
-        <p>Full-Time</p>
+        <p>Full-Time/Contractual/Internship</p>
       </div>
     </div>
 
     <div class="right">
       <p>View Job Details</p>
-      <button data-modal-target="#modal" class="apply-now">APPLY NOW</button>
+      <button data-modalcss-target="#modalcss" class="apply-now">APPLY NOW</button>
     </div>
 
   </div>
@@ -186,20 +188,20 @@
   <div class="job-container">
 
     <div class="left">
-      <p class="department">Department</p>
-      <h4>POSITION REQUIRED-</h4>
+      <p class="department">Tech Team</p>
+      <h4>Full-Stack Developer</h4>
       <p class="position-count">No. of positions: 5</p>
       <div class="position-type">
         <i class="fa-solid fa-location-dot"></i>
         <p>Remote</p>
         <i class="fa-solid fa-clock"></i>
-        <p>Full-Time</p>
+        <p>Full-Time/Internship</p>
       </div>
     </div>
 
     <div class="right">
       <p>View Job Details</p>
-      <button data-modal-target="#modal">APPLY NOW</button>
+      <button data-modalcss-target="#modalcss">APPLY NOW</button>
     </div>
 
   </div>

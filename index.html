@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ajile Done</title>
     <link rel="shortcut icon" href="./assets/images/logo.svg?v=2" type="image/x-icon">  
-    <link rel="stylesheet" href="./assets/css/index.css" />
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  </head>
+<link rel="stylesheet" href="./assets/css/index.css" /> 
+</head>
 
   <body>
-    <div class="modal" id="modal">
-      <div class="modal-right">
+    <div class="modalcss" id="modalcss">
+      <div class="modalcss-right">
         <h1>SEND QUOTE FOR FREE!</h1>
         <p>Choose the service you want to ask query about?</p>
         <form  action="mailto:ritikranjan@ajiledone.com" method="post" enctype="text/plain">
@@ -50,7 +50,7 @@
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
         <a href="index.html"><img id="logo" src="assets/images/Horizontal 1.png" alt=""></a>
-          <a class="navbar-brand" href="#" style="margin: 0px 10px;">AjileDone</a>
+          <a class="navbar-brand" href="#" style="margin: 0px 20px;">AjileDone</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -73,9 +73,15 @@
                   <a class="nav-link" href="./ServicesPage.html">Services</a>
                 </li>
               </ul>
+              
             </div>
           </div>
         </div>
+        <form class="container-fluid justify-content-start">
+          <button class="btn me-2 navbar-toggle-off" type="button" style="position: relative; left:450px; background-color:#45537c; color: white;">
+            <a href="https://api.whatsapp.com/send?phone=919113458213" style="color: white;">Get In Touch</a>
+          </button>
+        </form>
       </nav>
       </header>
 
@@ -206,7 +212,7 @@
             </div>
           </div>
           <div class="container_last">
-            <button data-modal-target="#modal" class="get_in_touch glow">LET’S GO</button>
+            <button data-modalcss-target="#modalcss" class="get_in_touch glow">LET’S GO</button>
             <img src="./assets/images/info.svg" />
             <h3 id="c_l_t">
               A few steps can help you give your company a good shape, what’s

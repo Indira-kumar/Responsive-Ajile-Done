@@ -16,7 +16,7 @@ header ul li:hover{
 }
 
 
-.modal {
+.modalcss {
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: fixed;
@@ -29,27 +29,34 @@ header ul li:hover{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
-
-.modal.active {
+@media only screen and (max-width:600px){
+  .modalcss{
+    margin: auto auto;
+  }
+  .modalcss-left{
+    display: none;
+  }
+}
+.modalcss.active {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.modal-left {
+.modalcss-left {
   background-color: #7387C3;
   border-radius: 10px 0px 0px 10px;
 }
 
-.modal-left img {
+.modalcss-left img {
   margin: 150px 115px;
 }
 
-.modal-right {
+.modalcss-right {
   border-radius: 0px 10px 10px 0px;
   background-color: white;
   padding: 30px 100px;
 }
 
-.modal-right h1{
+.modalcss-right h1{
   display: block;
   width: 100%;
   background-color: white;
@@ -58,7 +65,7 @@ header ul li:hover{
   line-height: 29px;
 }
 
-.modal-right p{
+.modalcss-right p{
   font-weight: 400;
   font-size: 10px;
   line-height: 140%;
@@ -69,7 +76,7 @@ header ul li:hover{
   text-align: center;
 }
 
-.modal-right form input{
+.modalcss-right form input{
   width: 325.67px;
   height: 48px;
   background: #E5E5E5;
@@ -79,7 +86,7 @@ header ul li:hover{
   margin: 10px 0;
 }
 
-.modal-right form input[type="submit"] {
+.modalcss-right form input[type="submit"] {
   width: fit-content;
   display: block;
   margin: 30px auto 15px;
@@ -161,9 +168,23 @@ nav.main-navigation ul li{
   list-style: none;
 }
 .navbar-res{
-  width: 30%;
+  width: 1%;
   display: block;
   margin: 10px auto;
+  position: relative;
+  left:120px;
+}
+@media only screen and (max-width:600px){
+  .navbar-res{
+    width: 30%;
+    display: block;
+    margin: 10px auto;
+    position: static;
+    left: 0px;
+  }
+  .navbar-toggle-off{
+    display: none;
+  }
 }
 .navbar-res a{
   color:#0b30e9;
@@ -251,6 +272,10 @@ nav.main-navigation ul li{
 
 .content {
   padding: 20px;
+  font-size: 1.1em;
+}
+.font-content{
+  font-size: large;
 }
 
 #secondary-border {
@@ -367,7 +392,10 @@ footer div img {
   font-size: 12px;
   line-height: 15px;
 }
-
+header{
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 #license {
   color: white;
   font-weight: 300;
@@ -376,4 +404,8 @@ footer div img {
   text-align: center;
   background-color: #45537C;
   padding-bottom: 15px;
+}
+footer{
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
