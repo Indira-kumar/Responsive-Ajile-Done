@@ -10,4 +10,4 @@ A responsive UI for the Ajile Done Company.
 
 [Click Here](https://indira-kumar.github.io/Responsive-Ajile-Done/) Link to the Website
 ### Note:
-All the Images, logos are copy righted to the Ajile Done company
+All the Images, logos Credits: -Ajile Done Pvt Ltd, Delhi
