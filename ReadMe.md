@@ -23,9 +23,19 @@ Additionally, the repository may include other related files, such as images, lo
 - Twitter: [@theluckiestman](https://twitter.com/theluckiestman)
 - LinkedIn: [Indira Kumar A K](https://www.linkedin.com/in/indira-kumar-a-k-b612381bb/)
 
-- [Gayathri Sthanusubramonian](https://github.com/Gayathri2522)
-- [Aluru S Vardhini](https://github.com/vardhinialuru05)
-- [Aaqil Rajkrishna](https://github.com/aaqilrk)
+👤 **Gayathri Sthanusubramonian**
+
+- GitHub: [@Gayathri2522](https://github.com/Gayathri2522)
+- LinkedIn: [Gayathri Sthanusubramonian](https://www.linkedin.com/in/gayathri-sthanusubramonian-9aa882213/)
+
+👤 **Aluru S Vardhini**
+- GitHub: [@vardhinialuru05](https://github.com/vardhinialuru05)
+- LinkedIn: [Aluru Vardhini](https://www.linkedin.com/in/aluru-vardhini-514006200/)
+
+👤 **Aaqil Krishna**
+
+- GitHub: [@aaqilrk](https://github.com/aaqilrk)
+- LinkedIn: [Aaqil Krishna](https://www.linkedin.com/in/aaqil-krishna/)
 
 ## Demo <a name="demo"></a>
 
