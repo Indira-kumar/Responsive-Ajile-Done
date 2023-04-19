@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Custom Style   -->
+  <link rel="shortcut icon" href="./assets/images/logo.svg?v=2" type="image/x-icon">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="./assets/js/title_changer.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="assets/css/Careers.css">
+  <title>Services</title>
+</head>
+<body>
+  
+  <div class="modalcss" id="modalcss">
+    <div class="modalcss-left">
+      <img src="./assets/images/Rectangle 16.png" alt="">
+    </div>
+    <div class="modalcss-right">
+      <h1 id="title-popup">
+        <script>
+          function cloudChanger(){
+            var h1 = document.getElementById("title-popup")
+            h1.innerText = "CLOUD SERVICES";
+          }
+          function sapChanger(){
+            var h1 = document.getElementById("title-popup")
+            h1.innerText = "SAP AND ERP";
+          }
+          function blockChanger(){
+            var h1 = document.getElementById("title-popup")
+            h1.innerText = "BLOCKCHAIN & METAVERSE";
+          }
+          function aiChanger(){
+            var h1 = document.getElementById("title-popup")
+            h1.innerText = "AI AND MACHINE LEARNING";
+          }
+          function daChanger(){
+            var h1 = document.getElementById("title-popup")
+            h1.innerText = "BI & DATA ANALYSIS";
+          }
+          function webChanger(){
+            var h1 = document.getElementById("title-popup")
+            h1.innerText = "MOBILE AND WEBSITE DEVELOPMENT";
+          }
+
+        </script>
+      </h1>
+      <p>We are a trusted advisor providing expert consulting and support services in the above implementation.</p>
+      <form  action="mailto:ritikranjan@ajiledone.com" method="post" enctype="text/plain">
+        <input placeholder="Company Name">
+        <input placeholder="Email - address">
+        <input placeholder="Phone Number">
+        <input placeholder="Query">
+        <input type="submit" value="GET A QUOTE">
+      </form>
+      <p id="down">We will contact you within 24 hours after receiving the quote. </p>
+    </div>
+  </div>
+
+  <div id="overlay"></div>
+
+  <!-- Navigation Bar -->
+
+	<header>
+		<!-- <nav class="main-navigation">
+			<a href="index.html"><img id="logo" src="assets/images/Horizontal 1.png" alt=""></a>
+
+			<ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./Careers.html">Careers</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="./ServicesPage.html">Services</a></li>
+      </ul>
+      
+      <button id="get-in-touch" class="glow"> <a href="https://api.whatsapp.com/send?phone=919113458213">GET IN TOUCH</a></button>
+		</nav> -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+      <a href="index.html"><img id="logo" src="assets/images/Horizontal 1.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-res">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Careers.html">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./ServicesPage.html">Services</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <form class="container-fluid justify-content-start">
+        <button class="btn me-2 navbar-toggle-off" type="button" style="position: relative; left:430px; background-color:#45537c; color: white;">
+          <a href="https://api.whatsapp.com/send?phone=919113458213" style="color: white;">Get In Touch</a>
+        </button>
+        <div class="dropdown" style="position:relative; left:440px;">
+          <button onclick="myFunction()" class="dropbtn navbar-toggle-off" type="button">Login</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="https://ajderp.com/authentication/login">Vendor Login</a>
+            <a href="https://ajderp.com/admin/authentication">Employee Login</a>
+          </div>
+        </div>
+      </form>
+    </nav>
+  	</header>
+
+	<!-- Navigation Bar -->
+
+  <!-- main -->
+
+  <div class="content-container">
+    <h2 class="hover-underline-animation">SERVICES</h2>
+    <div class="h2-border"></div>
+    <p>These are the services which our company provides. Select one service and send a query!</p>
+  </div>
+
+  <div id="services-container">
+    <div class="service-container">
+      <img src="./assets/images/blue cloud.jpeg" class="image-placeholder">
+      <h3 class="content">CLOUD SERVICES</h3>
+      <p class="content" style="font-size:0.9em;">Easy access to applications, resources and maintenance We deliver a significant enterprise-level effort that impacts the way organizations operate and deliver services to business users and clients. Our services include building of infrastructure, VPN, VPS services, integrations, and storage services to help maintain your business on the cloud. We provide end-to-end support in your journey to cloud-enabled IT with Amazon Web Services, Google Cloud and Microsoft Azure.</p>
+      <button data-modalcss-target="#modalcss" class="glow" name="cloud-services" value="Cloud Services" onclick="cloudChanger()" class="margin-button">GET A QUOTE</button>
+    </div>
+
+    <div class="service-container">
+      <img src="./assets/images/SAP ERP.jpeg" class="image-placeholder">
+      <h3 class="content">SAP AND ERP</h3>
+      <p class="content font-content" style="font-size:0.9em;">We are a trusted advisor providing expert consulting and support services in SAP/ERP implementation. Our expertise lies in the evaluation, implementation and management of the following technologies. Don’t let outdated accounting software drag down your efficiency. Digitalization is imperative today in the global market, whether you are a start-up, an SME or a large firm. SAP Business One is a full-fledged business management solution that will track, review and monitor your company’s operations—in an easy, quick, scalable and affordable manner</p>
+      <button data-modalcss-target="#modalcss" class="glow" onclick="sapChanger()" class="margin-button" >GET A QUOTE</button>
+    </div>
+    
+    <div class="service-container">
+      <img src="./assets/images/Block Chain.jpeg" class="image-placeholder">
+      <h3 class="content">BLOCKCHAIN & METAVERSE</h3>
+      <p class="content" style="font-size:0.9em;">Realize greater trust and veracity Block chain is a real game changer in the way business is conducted in the new world. With blockchain, you can ensure reliability of data, increase the security of your financial and operational transactions, save time, and reduce overhead costs and risk. With the advent of Metaverse, blockchain technology has become all the more significant, empowering users with immutable ownership of their digital assets. We provide top-of-the-class solutions in the following areas: governance design, business value design and technology design.</p>
+      <button data-modalcss-target="#modalcss" class="glow" onclick="blockChanger()" class="margin-button">GET A QUOTE</button>
+    </div>
+
+    <div class="service-container">
+      <img src="./assets/images/Ai-ML.jpeg" class="image-placeholder">
+      <h3 class="content">AI AND MACHINE LEARNING</h3>
+      <p class="content" style="font-size:0.9em;">Make data-backed intelligent decisions Our domain experts will help you capitalize on these new technologies that are taking the world by storm. We provide solutions tailored to your precise requirements to create competitive business solutions, cut down repetitive tasks and speed up decision-making. Our services include the length and breadth of these transformational technologies—operational machine intelligence, conversational interfaces, processing of natural language, deep neural networks, BOT as a service, prototype development, predictive analytics, and computer vision.</p>
+      <button data-modalcss-target="#modalcss" class="glow" onclick="aiChanger()" class="margin-button">GET A QUOTE</button>
+    </div>
+
+    <div class="service-container">
+      <div>
+        <img src="./assets/images/data analytics.jpeg" class="image-placeholder">
+        <h3 class="content">BI & DATA ANALYSIS</h3>
+        <p class="content" style="font-size:0.9em;">Data is here, there, everywhere, but how you use it makes all the difference. We’ll ensure the right data is available at the right time at the right place and provide customized data access and real-time insights. We’ll also support you with predictive forecasting and AI-powered analytics for you to plan intelligently and make contextual decisions, thus enabling outstanding performance and scalability.</p>  
+      </div>
+      <div>
+      <button data-modalcss-target="#modalcss" class="glow" onclick="daChanger()" class="margin-button">GET A QUOTE</button>
+      </div>
+    </div>
+
+    <div class="service-container">
+      <div>
+        <img src="./assets/images/red laptop.jpeg" class="image-placeholder">
+      <h3 class="content">MOBILE AND WEBSITE DEVELOPMENT</h3>
+      <p class="content" style="font-size:0.9em;">Optimized solutions for high performance User-friendly mobile and web applications are your best bet to enhance user engagement and conversion rates. Our expertise is in developing intricate yet fuss-free websites and easy-to-use mobile apps that come with minimum maintenance while yielding maximum business value.</p>
+      </div>
+      <div>
+      <button data-modalcss-target="#modalcss" class="glow" onclick="webChanger()" class="margin-button">GET A QUOTE</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- main -->
+
+  <!-- footer -->
+
+  <div id="secondary-border">
+    <footer>
+      <div>
+        <img src="./assets/images/AJILEDONE LOGO 3 2.png">
+        <p>We Ajiledone, work to provide the best SAP Consulting Services with the experience to improve the IT landscape for uninterrupted business operations by 24*7 support.</p>
+      </div>
+
+      <div>
+        <h5>LINKS</h5>
+        <ul>
+          <li>
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="./Careers.html">Careers</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+          <li>
+            <a class="nav-link" href="./ServicesPage.html">Services</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>CONTACT INFO</h5>
+        <p class="info">Co-Offiz 8th Floor, Magnum Tower 1 Sector 58, Gurgaon Haryana -122011</p>
+        <p class="info">+91-9315473097</p>
+        <p class="info">info@ajiledone.com</p>
+      </div>
+
+      <div>
+        <h5>SUBSCRIBE TO US</h5>
+        <form id="subscribe">
+          <input placeholder="Your email address">
+          <input type="submit" value="SUBSCRIBE">
+        </form>
+      </div>  
+    </div>
+  </footer>
+  <p id="license">2022 All right reserved by Ajiledone</p>
+</div>
+	<!-- footer -->
+
+  <script src="./assets/js/Careers.js"></script>
+  <script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show-dropdown");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show-dropdown')) {
+        openDropdown.classList.remove('show-dropdown');
+      }
+    }
+  }
+}
+  </script>
+</body>
+</html>
