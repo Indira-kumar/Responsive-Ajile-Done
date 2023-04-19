@@ -11,6 +11,9 @@
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <link rel="stylesheet" href="./assets/css/index.css" /> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
   <body>
@@ -50,7 +53,6 @@
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
         <a href="index.html"><img id="logo" src="assets/images/Horizontal 1.png" alt=""></a>
-          <a class="navbar-brand" href="#" style="margin: 0px 20px;">AjileDone</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -78,9 +80,15 @@
           </div>
         </div>
         <form class="container-fluid justify-content-start">
-          <button class="btn me-2 navbar-toggle-off" type="button" style="position: relative; left:450px; background-color:#45537c; color: white;">
+          <button class="btn me-2 navbar-toggle-off" type="button" style="position: relative; left:430px; background-color:#45537c; color: white;">
             <a href="https://api.whatsapp.com/send?phone=919113458213" style="color: white;">Get In Touch</a>
           </button>
+          <div class="dropdown" style="position:relative; left:440px;">
+            <button onclick="myFunction()" class="dropbtn navbar-toggle-off" type="button">Login</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="https://ajderp.com/authentication/login">Vendor Login</a>
+            <a href="https://ajderp.com/admin/authentication">Employee Login</a>
+          </div>
         </form>
       </nav>
       </header>
@@ -89,20 +97,54 @@
 
     <div class="content">
       <div class="first responsive-container">
-        <div><img id="first_image" class="responsive-img"  src="./assets/images/code_first.svg" /></div>
+        <div><img id="first_image" class="responsive-img"  src="./assets/images/first_image.png" width="330px"  height="471.3px"/></div>
         <div class="block-center">
-          <img id="logo1" src="./assets/images/logo_mid.svg" />
-          <h1  class="responsive-text1">Powering Your Path to Success with Swift and Smart Solutions</h1>
-          <h2  class="responsive-text2">
+          <img id="logo1" src="./assets/images/AJILEDONE LOGO 3 2.png" width="178px" height="auto" />
+          <h1  class="responsive-text1"><b>Powering Your Path to Success with Swift and Smart Solutions</b></h1>
+          <p  class="responsive-text2">
             Our superior digital intelligence and sound expertise will help you
             stay agile and ahead of the curve.
-          </h2>
+          </p>
           <img id="third_image" src="./assets/images/scroll_down.svg" />
         </div>
-        <div><img id="second_image" class="responsive-img" src="./assets/images/first_second.svg" /></div>
+        <div><img id="second_image" class="responsive-img" src="./assets/images/second_image.png" /></div>
       </div>
+      <script>
+        const scroll_down = document.getElementById('third_image');
+        window.addEventListener("scroll", () => {
+            var y = window.scrollY;
+            if (y >= 300){
+              scroll_down.classList.add('disappear');
+                return;
+            }
+            else{
+              scroll_down.classList.remove('disappear');
+                // note that this is a class defined in your CSS.
+            }
+        });
+      </script>
 
-      <img id="second" width="100%" src="./assets/images/second.svg" />
+      <!-- <img id="second" width="100%" src="./assets/images/second.svg" /> -->
+      <div class="parent-info">
+        <div class="grid-container-info">
+            <div class="grid-child1-info">
+                <div class="heading-info" style="padding-top: 65px;"><h4>YEARS OF EXPERIENCE</h4></div>
+                <div class="border1-info"></div><div class="bottom-info">10+</div>
+            </div>
+            <div class="grid-child2-info">
+                <div class="border2-info"></div><div class="ten-info">15</div>
+                <div class="heading-info"><h4 class="bottom-desc">QUALIFIED<br> EXPERTS</h4></div>
+            </div>
+            <div class="grid-child1-info">
+                <div class="heading-info" style="padding-top: 65px;"><h4>CLIENTS<br> EVERY YEAR</h4></div>
+                <div class="border1-info"></div><div class="bottom-info">10</div>
+            </div>
+            <div class="grid-child2-info">
+                <div class="border2-info"></div><div class="ten-info">5</div> 
+                <div class="heading-info"><h4 class="bottom-desc">INTERNATIONAL PARTNERS</h4></div>
+            </div>
+        </div>
+    </div>
 
       <div class="third">
         <center>
@@ -112,12 +154,13 @@
             We accompany you in building your company with our services.
           </h3>
 
-          <div class="grid-container ">
+          <div class="grid-container">
             <div class="grid-child column-1 sap">
               <div class="main">
                 <h1>SAP</h1>
               </div>
             </div>
+            
 
             <div class="grid-child column-2 erp">
               <div class="main">
@@ -149,11 +192,51 @@
               </div>
             </div>
           </div>
+          
         </center>
-      </div>
+        <!-- <div class="grid-container">
+          <div class="grid-child column-1 sap">
+            <div class="main">
+              <h1>SAP</h1>
+            </div>
+          </div>
 
-      <div class="fourth">
-        <img id="fourth_first" src="./assets/images/fourth_first.svg" />
+          <div class="grid-child column-2 erp">
+            <div class="main">
+              <h1>ERP</h1>
+            </div>
+          </div>
+
+          <div class="grid-child column-3 cloud">
+            <div class="main">
+              <h1>CLOUD SERVICES</h1>
+            </div>
+          </div>
+
+          <div class="grid-child column-1 blockchain">
+            <div class="main">
+              <h1>BLOCKCHAIN & METAVERSE</h1>
+            </div>
+          </div>
+
+          <div class="grid-child column-2 data-analytics">
+            <div class="main">
+              <h1>BI & DATA ANALYSIS</h1>
+            </div>
+          </div>
+
+          <div class="grid-child column-3 ai">
+            <div class="main">
+              <h1>AI & MACHINE LEARNING</h1>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="fourth" style="position:relative;">
+        <!-- <img id="fourth_first" src="./assets/images/fourth_first.svg" /> -->
+        <img src="./assets/images/confused_and_sad1.jpeg" id="fourth_first" alt="confused_and_sad" height="270px" width="auto" style="border-radius:49%;margin-left: 30px; position: absolute; top: 10px;left: 65px;">
+        
         <center>
           <h2 id="four_title">IS YOUR COMPANY FEELING LOST?</h2>
           <div id="third_d"></div>
@@ -171,9 +254,9 @@
 
           <h1>If YES, then</h1>
           <h3>it’s time to give your business a power-packed Ajile boost!</h3>
-          <button class="get_in_touch" style="color: white;"><a href="https://api.whatsapp.com/send?phone=919113458213" style="color: white;">GET IN TOUCH</a></button>
+        <img src="./assets/images/wow.png" style="position: relative; left:500px; bottom: 110px; margin-bottom: 0px;" height="270px" width="auto" />
 
-          <div class="container-fourth">
+          <div class="container-fourth" style="margin-top: 0px;">
 
 
             <div class="c_f_item">
@@ -212,20 +295,21 @@
             </div>
           </div>
           <div class="container_last">
-            <button data-modalcss-target="#modalcss" class="get_in_touch glow">LET’S GO</button>
-            <img src="./assets/images/info.svg" />
-            <h3 id="c_l_t">
-              A few steps can help you give your company a good shape, what’s
+            <button data-modalcss-target="#modalcss" class="get_in_touch glow  c-l-hide">LET’S GO</button>
+            <img src="./assets/images/info.svg" class="c-l-hide" />
+            <h3 id="c_l_t" class=" c-l-hide">
+              A few steps can help you give your company a good shape, <br>what’s
               day?
             </h3>
           </div>
+          <button data-modalcss-target="#modalcss" class="get_in_touch glow  c-l-disp" style="margin:15px;">LET’S GO</button>
 
         </center>
       </div>
     </div>
 
     <div id="image-container">
-      <img src="./assets/images/Rectangle 54.png">
+      <img src="./assets/images/footer_background.png" class="footer-background-img">
     </div>
 
       <!-- footer -->
@@ -277,7 +361,25 @@
       <!-- footer -->
 
     <script src="./assets/js/Careers.js""></script>
+    <script>
+      function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show-dropdown");
+              }
 
+              // Close the dropdown if the user clicks outside of it
+              window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-dropdown')) {
+                      openDropdown.classList.remove('show-dropdown');
+                    }
+                  }
+                }
+              }
+    </script>
   </body>
 
 </html>

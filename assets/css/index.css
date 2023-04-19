@@ -52,6 +52,7 @@ body {
 
 #down {
   text-align: center;
+  font-size: 0.5em;
 }
 header ul li:hover{
   text-decoration: underline;
@@ -195,7 +196,15 @@ nav.main-navigation ul li{
   padding: 6px;
   border-radius: 100%;
   border: 1px solid #BFC9FF;
+  position: relative;
+  left: 100px;
 } 
+@media only screen and (max-width:600px){
+  #logo{
+    position: relative;
+    left: 20px;
+  }
+}
 
 #get-in-touch {
   border: 0;
@@ -232,7 +241,7 @@ nav.main-navigation ul li{
 
 .responsive-text2{
   text-align: center;
-  font-size: 2vw;
+  font-size: 1vw;
   line-height: 30px;
 }
 .responsive-text3{
@@ -266,7 +275,7 @@ nav.main-navigation ul li{
   position: absolute;
   width: 100%;
   height: auto;
-  left: -51.37px;
+  left: -15.37px;
   top: 180px;
 } 
  #second_image {
@@ -278,6 +287,10 @@ nav.main-navigation ul li{
   left: 78%;
   top: 15%;
   overflow: hidden;
+}
+.footer-background-img{
+  height: 400px;
+  width: auto;
 }
 .fourth_res{
   display: none;
@@ -392,14 +405,14 @@ nav.main-navigation ul li{
   text-align: center;
   color: #000000;
 }
-
 .grid-container {
   margin-top: 6vh;
   width: 70%;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns:1fr 1fr 1fr;
   padding: 10px;
 }
+
 @media only screen and (max-width:600px)  {
   .grid-container{
     display: flex;
@@ -407,25 +420,37 @@ nav.main-navigation ul li{
   }
 }
 .column-1
- {width: 33.33%;}
+ {width: 33%;}
 .column-2
- {width: 33.33%;}
-.column-2
- {width: 33.33%;}
- [class*="column-"] {
+ {width: 33%;}
+.column-3
+ {width: 33%;
+}
+@media only screen and (max-width:600px) {
+  .column-3{
+    margin-left: inherit;
+  }
+  .grid-child{
+    margin-left:5px;
+  }
+}
+ /* [class*="column-"] {
   float: left;
   padding: 15px;
-  border: 1px solid red;
-}
-.grid-container::after {
+  border: 1px solid #45537C;
+} */
+/* .grid-container::after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 .grid-child {
   box-sizing: border-box;
   border-radius: 10px;
+  margin-top: 30px;
   margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   background-color: #45537C;
   background-repeat: no-repeat;
   height: 220px;
@@ -436,18 +461,28 @@ nav.main-navigation ul li{
   justify-content: center;
   transform: translate(42px, 18px);
 }
-
-.grid-child:hover h1{
-  position: relative;
-  top:90px;
-}
-.sap:hover{
-    background-image:url(../images/SAP\ ERP.jpeg);
-    background-position: center;
-    background-size: 280px 220px;
+/* @media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px){
+  .grid-child{
+    max-width: 230px;
   }
+} */
+.sap:hover{
+  background:url(../images/SAP\ ERP.jpeg);  
+  background-position: center;
+  background-size: 280px 220px;
+  /* opacity: 0;
+  -moz-transition: all 1.5s ease-in-out;
+  -webkit-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out; */
+}
+/* .sap:hover{
+  opacity: 1;
+} */
 .erp:hover{
-  background-image:url(../images/SAP\ ERP.jpeg);
+  background-image:url(../images/SAP\ ERP.jpeg);   
   background-position: center;
   background-size: 280px 220px;
 }
@@ -456,21 +491,162 @@ nav.main-navigation ul li{
   background-position: center;
   background-size: 280px 220px;
 }
-.blockchain:hover{
-  background-image:url(../images/Block\ Chain.jpeg);
-  background-position: center;
-  background-size: 280px 220px;
-}
+.blockchain:hover
+  {
+    background-image:url(../images/Block\ Chain.jpeg);    
+      background-position: center;
+    background-size: 280px 220px;
+    }
 .ai:hover{
-  background-image:url(../images/ai.jpg);
-  background-position: top;
-  background-size: 280px auto;
+    background-image:url(../images/ai.jpg);
+    background-position: center;
+    background-size: 280px auto;
 }
 .data-analytics:hover{
   background-image:url(../images/data\ analytics.jpeg);
   background-position: center;
   background-size: 280px 220px;
 }
+@media only screen and (max-width:600px) {
+  .grid-child{
+    margin-left:-3px;
+  }
+}
+.grid-child:hover h1{
+  position: relative;
+  top:90px;
+}
+/* .sap:hover{
+  animation: faddingbg_sap 4s;
+  animation-fill-mode: both;
+}
+@keyframes faddingbg {
+ 
+  50%{
+    background-image:url(../images/SAP\ ERP.jpeg);
+    opacity: 0.8;
+    background-position: center;
+  background-size: 280px 220px;
+  }
+  100%{
+    background-image:url(../images/SAP\ ERP.jpeg);
+    opacity: 1;
+    background-position: center;
+  background-size: 280px 220px;
+  }
+}
+
+
+.erp:hover
+  
+  {
+    animation: faddingbg_sap 4s;
+    animation-fill-mode: both;
+  }
+  @keyframes faddingbg_sap {
+   
+    50%{
+      background-image:url(../images/SAP\ ERP.jpeg);   
+           opacity: 0.8;
+      background-position: center;
+    background-size: 280px 220px;
+    }
+    100%{
+      background-image:url(../images/SAP\ ERP.jpeg);   
+      opacity: 1;
+      background-position: center;
+    background-size: 280px 220px;
+    }
+  }
+  
+
+.cloud:hover
+  {
+    animation: faddingbg_c 4s;
+    animation-fill-mode: both;
+  }
+  @keyframes faddingbg_c {
+   
+    50%{
+      background-image:url(../images/blue\ cloud.jpeg);
+      opacity: 0.8;
+      background-position: center;
+    background-size: 280px 220px;
+    }
+    100%{
+      background-image:url(../images/blue\ cloud.jpeg);
+      opacity: 1;
+      background-position: center;
+    background-size: 280px 220px;
+    }
+  }
+
+.blockchain:hover
+  {
+  animation: faddingbg_bc 4s;
+    animation-fill-mode: both;
+  }
+  @keyframes faddingbg_bc {
+   
+    50%{
+      background-image:url(../images/Block\ Chain.jpeg);
+      opacity: 0.8;
+      background-position: center;
+    background-size: 280px 220px;
+    }
+    100%{
+      background-image:url(../images/Block\ Chain.jpeg);
+      opacity: 1;
+      background-position: center;
+    background-size: 280px 220px;
+    }
+  }
+  
+
+.ai:hover
+  {
+    animation: faddingbg_ai 4s;
+    animation-fill-mode: both;
+  }
+  @keyframes faddingbg_ai {
+   
+    50%{
+      background-image:url(../images/ai.jpg);
+      opacity: 0.8;
+      background-position: center;
+    background-size: 280px auto;
+    }
+    100%{
+      background-image:url(../images/ai.jpg);
+      opacity: 1;
+      background-position: center;
+    background-size: 280px auto;
+    }
+  }
+  
+
+.data-analytics:hover
+  {
+    animation: faddingbg_da 4s;
+    animation-fill-mode: both;
+  }
+  @keyframes faddingbg_da {
+   
+    50%{
+      background-image:url(../images/data\ analytics.jpeg);
+
+      opacity: 0.8;
+      background-position: center;
+    background-size: 280px 220px;
+    }
+    100%{
+      background-image:url(../images/data\ analytics.jpeg);
+      opacity: 1;
+      background-position: center;
+    background-size: 280px 220px;
+    }
+  } */
+
 
 .grid-child h1 {
   font-style: normal;
@@ -598,10 +774,17 @@ nav.main-navigation ul li{
   display: flex;
   align-items: center;
   justify-content: center;
+  position:relative; left:202px; 
 }
-@media screen and (max-width: 575px) {
-  .container-last{
-    flex-direction: column;
+.c-l-disp{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .c-l-hide{
+    display: none;
+  }
+  .c-l-disp{
+    display: block  ;
   }
 }
 
@@ -627,7 +810,14 @@ nav.main-navigation ul li{
 
 #image-container img {
   width: 100%;
-  height: 384px;
+  height: 550px;
+}
+@media only screen and (max-width:600px) {
+  #image-container img{
+    height: auto;
+    width:100%;
+  }
+  
 }
 
 #secondary-border {
@@ -651,11 +841,14 @@ footer {
     display: grid;
     grid-template-columns: 0;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding: 200px 100px ;
+    padding: 200px;
   }
   footer div{
     width: 250px;
     text-align: justify;
+    position: relative;
+    right: 190px;
+    padding-left: 0px;
   }
 }
 
@@ -759,3 +952,157 @@ footer{
   font-weight: 400;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.disappear{
+  display: none;
+  transition: 0.5s ease-in;
+}
+.parent-info{
+  position: relative;
+  background-color: #45537C;
+  width: 100%;
+  height: 300px;
+  margin-top: 230px;
+}
+.grid-container-info {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 55px;
+}
+.grid-child1-info{
+  display: grid;
+  grid-template-rows: 1.5fr 2fr;
+}
+.grid-child2-info{
+  display: grid;
+  grid-template-rows: 2fr 1.5fr;
+}
+
+.border1-info{
+  width: 150px;
+  height: 150px;
+  font-family: 'Montserrat';
+font-size: 64px;
+font-weight: 700;
+line-height: 78px;
+letter-spacing: 0em;
+text-align: center;
+border: 5px dashed  #FFFFFF;
+border-radius: 50%;
+position:relative;
+box-sizing: border-box;
+top: 40px;
+left: 35px;
+animation: rotate 18s linear infinite;
+}
+.ten-info{
+  position: relative;
+  bottom:180px;
+  right: 60px;
+  color: #FFFFFF;
+  font-size: 64px;
+font-weight: 700;
+line-height: 78px;
+letter-spacing: 0em;
+text-align: center;
+}
+.heading-info{
+  font-family: "Montserrat";
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 15px;
+  display: inline-block;
+}
+.bottom-info{
+  position: relative;
+  bottom: 100px;
+  right: 20px;
+  color: #fff;
+  font-size: 64px;
+font-weight: 700;
+line-height: 78px;
+letter-spacing: 0em;
+text-align: center;
+}
+.bottom-desc{
+  position: relative;
+  bottom: 150px;
+}
+.border2-info{
+  width: 150px;
+  height: 150px;
+  font-family: 'Montserrat';
+border: 5px dashed  #FFFFFF;
+border-radius: 50%;
+position:relative;
+box-sizing: border-box;
+bottom: 33px;
+right: 5px;
+animation: rotate 18s linear infinite;
+}
+.border1-info:hover{
+animation: rotate 5s linear infinite;
+  
+}
+.border2-info:hover{
+animation: rotate 5s linear infinite;
+}
+@media only screen and (max-width:600px){
+.parent-info {
+  display: none;
+}
+}
+@keyframes rotate
+{
+    from
+    {
+    transform: rotate(360deg);
+    }
+    to
+    {
+    transform: rotate(-360deg);
+    }
+}
+header{
+  font-family: 'Montserrat';
+}
+.dropbtn {
+  background-color: #45537C;
+  color: white;
+  padding:7px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #45537C;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: rgb(223, 231, 249);}
+
+.show-dropdown {display: block;}
