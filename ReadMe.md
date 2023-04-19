@@ -1,13 +1,52 @@
 # Responsive Ajile Done Website
+<a name="readme-top"></a>
+# 📗 Table of Contents
 
-A responsive UI for the Ajile Done Company.
+- [📖 About the Project](#about-project)
+- [👥 Authors](#authors)
+- [🕸️ Demo](#demo)
+- [⭐️ Show your support](#support)
+- [📝 License](#license)
 
-## Contributers
+## About the Project <a name="about-project"></a>
+The repository contains the source code for landing page of a startup company called AjileDone that is built with responsiveness in mind. The landing page was developed within a short timeframe of just two days, after being requested by the startup. The landing page is designed to showcase the startup's products or services and entice potential customers to learn more or take action.
+
+The source code in the repository includes HTML, CSS, and JavaScript files that were used to create the landing page. The code is organized and structured in a way that makes it easy to understand and modify.
+
+Additionally, the repository may include other related files, such as images, logos, and fonts used in the landing page. These files have been organized in separate directories for easier management.
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Indira Kumar A K**
+
+- GitHub: [@Indira-kumar](https://github.com/Indira-kumar)
+- Twitter: [@theluckiestman](https://twitter.com/theluckiestman)
+- LinkedIn: [Indira Kumar A K](https://www.linkedin.com/in/indira-kumar-a-k-b612381bb/)
+
 - [Gayathri Sthanusubramonian](https://github.com/Gayathri2522)
-- [Indira Kumar A K](https://github.com/Indira-kumar)
 - [Aluru S Vardhini](https://github.com/vardhinialuru05)
 - [Aaqil Rajkrishna](https://github.com/aaqilrk)
 
-[Click Here](https://indira-kumar.github.io/Responsive-Ajile-Done/) Link to the Website
-### Note:
-All the Images, logos Credits: -Ajile Done Pvt Ltd, Delhi
+## Demo <a name="demo"></a>
+
+[Click Here](https://indira-kumar.github.io/Responsive-Ajile-Done/) for the live demo to the Website
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page]().
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+Give a ⭐️ if you like this project!
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [Private Licensed](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
